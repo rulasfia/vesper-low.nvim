@@ -1,5 +1,5 @@
-local config = require("vesper.config")
-local mix = require("vesper.utils").mix
+local config = require("vesper-low.config")
+local mix = require("vesper-low.utils").mix
 
 local colors = {
 	-- background colors
@@ -40,6 +40,7 @@ local colors = {
 	symbol = "#65737e",
 	secondary = "#dad3ce",
 	terminalbrightblack = "#343434",
+	whitespace = "#312e2b",
 
 	-- diagnostic colors
 	error = "#ed8080",

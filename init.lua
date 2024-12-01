@@ -163,7 +163,7 @@ vim.keymap.set('n', ';f', function()
   }, theme))
 end, opts)
 
-local theme = require("vesper/init")
+local theme = require("vesper-low/init")
 
 theme.setup({
 	transparent = false,

@@ -1,8 +1,8 @@
-local colors = require("vesper.colors")
-local config = require("vesper.config")
-local utils = require("vesper.utils")
-local bufferline = require("vesper.integrations.bufferline")
-local cmp = require("vesper.integrations.cmp")
+local colors = require("vesper-low.colors")
+local config = require("vesper-low.config")
+local utils = require("vesper-low.utils")
+local bufferline = require("vesper-low.integrations.bufferline")
+local cmp = require("vesper-low.integrations.cmp")
 local theme = {} -- teste
 
 local function set_terminal_colors()
@@ -95,7 +95,7 @@ local function set_groups()
 		Visual = { bg = utils.shade(colors.bgDarker, 0.70) },
 		VisualNOS = { link = "Visual" },
 		WarningMsg = { fg = colors.warn },
-		Whitespace = { fg = colors.symbol },
+		Whitespace = { fg = colors.whitespace },
 		WildMenu = { bg = colors.bgOption },
 		Comment = { fg = colors.comment, italic = config.italics.comments or false },
 
@@ -266,8 +266,8 @@ local function set_groups()
 		["@error"] = { link = "Error" },
 		["@warning"] = { link = "WarningMsg" },
 		["@info"] = { fg = colors.green },
-    ["@markup.link.label"] = { underline = false },
-    ["@none"] = { fg = colors.white },
+		["@markup.link.label"] = { underline = false },
+		["@none"] = { fg = colors.white },
 
 		-- Specific languages
 		-- overrides
@@ -325,7 +325,7 @@ function theme.colorscheme()
 
 	vim.g.VM_theme_set_by_colorscheme = true -- Required for Visual Multi
 	vim.o.termguicolors = true
-	vim.g.colors_name = "vesper"
+	vim.g.colors_name = "vesper-low"
 
 	set_terminal_colors()
 	set_groups()
