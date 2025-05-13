@@ -1,6 +1,5 @@
 local config = require("vesper-low.config")
 local mix = require("vesper-low.utils").mix
-
 local colors = {
 	-- background colors
 	white = "#dad3ce",
@@ -26,15 +25,15 @@ local colors = {
 	borderDarker = "#a0a0a0",
 
 	-- ui colors
-	greenLight = "#92c4a4",
-	red = "#ed8080",
-	purple = "#e4b894",
-	redDark = "#ed8080",
-	orange = "#e4b894",
+	greenLight = "##a8f0d3",
+	red = "#FF8080",
+	purple = "#FFC799",
+	redDark = "#FF8080",
+	orange = "#FFC799",
 	primary = "#a0a0a0",
 	comment = mix("#8b8b8b", "#000000", math.abs(0.90)),
-	orangeLight = "#e4b894",
-	green = "#92c4a4",
+	orangeLight = "#FFCFA8",
+	green = "#a8f0d3",
 	yellowDark = "#f1cbac",
 	purpleDark = mix("#65737e", "#000000", math.abs(0.80)),
 	symbol = "#65737e",
@@ -43,9 +42,9 @@ local colors = {
 	whitespace = "#312e2b",
 
 	-- diagnostic colors
-	error = "#ed8080",
-	warn = "#f1cbac",
-	info = "#92c4a4",
+	error = "#FF8080",
+	warn = "#FFCFA8",
+	info = "#a8f0d3",
 	hint = "#65737e",
 }
 

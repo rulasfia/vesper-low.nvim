@@ -66,7 +66,6 @@ local function set_groups()
 		Substitute = { link = "IncSearch" },
 		CursorLineNr = { fg = colors.white },
 		MatchParen = { fg = colors.primary, bg = bg },
-		MatchParen = { fg = colors.primary, bg = bg },
 		ModeMsg = { link = "Normal" },
 		MsgArea = { link = "Normal" },
 		-- MsgSeparator = {},
