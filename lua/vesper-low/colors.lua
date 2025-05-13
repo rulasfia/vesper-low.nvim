@@ -25,7 +25,7 @@ local colors = {
 	borderDarker = "#a0a0a0",
 
 	-- ui colors
-	greenLight = "##a8f0d3",
+	greenLight = "#a8f0d3",
 	red = "#FF8080",
 	purple = "#FFC799",
 	redDark = "#FF8080",
